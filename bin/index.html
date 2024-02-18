@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div id="canvasResolution">
+        <span>0x0</span>
+      </div>
+      <div class="workspace">
+
+        <div class="controls">
+          <ul class="colorpicker">
+            <li id="black">black</li>
+            <li id="red">red</li>
+            <li id="green">green</li>
+            <li id="blue">blue</li>
+            <li id="white">white</li>
+          </ul>
+
+          <div class="size">
+            <input id="pensize" type="range" min="1" max="50" value="0">
+          </div>
+        </div>
+        
+        <div class="export">
+          <button id="save"><a href="#">Save JPG</a></button>
+          <button id="undo">Undo</button>
+          <button id="redo">Redo</button>
+        </div>
+      
+        
+        <canvas class="painting"></canvas>
+      </div>
+      
+    </div>
+    
+    <script src="./main.js" type="text/javascript"></script>
+  </body>
+</html>
